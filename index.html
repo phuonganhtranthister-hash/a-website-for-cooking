@@ -1,1 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>CookWise | Learn to Cook</title>
+
+    <meta name="description"
+          content="Learn how to cook with easy recipes, cooking lessons, and step-by-step guides.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <div class="logo">
+            🍳 <span>CookWise</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#recipes">Recipes</a>
+            <a href="#lessons">Lessons</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="mobile-menu" id="mobileMenu">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <p class="eyebrow">WELCOME TO COOKWISE</p>
+
+                <h1>
+                    Learn to cook.<br>
+                    <span>Cook with confidence.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Simple recipes, practical cooking lessons, and
+                    step-by-step guidance to help you become a better cook.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#recipes" class="button primary-button">
+                        Explore Recipes
+                    </a>
+
+                    <a href="#lessons" class="button secondary-button">
+                        Start Learning
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-food">
+                🍝
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH -->
+    <section class="search-section">
+
+        <div class="search-container">
+
+            <h2>What do you want to cook?</h2>
+
+            <div class="search-box">
+
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search recipes..."
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+
+        <h2>Explore by Category</h2>
+
+        <div class="category-list">
+
+            <button class="category active" data-category="all">
+                🍽️ All
+            </button>
+
+            <button class="category" data-category="breakfast">
+                🥞 Breakfast
+            </button>
+
+            <button class="category" data-category="lunch">
+                🥗 Lunch
+            </button>
+
+            <button class="category" data-category="dinner">
+                🍝 Dinner
+            </button>
+
+            <button class="category" data-category="dessert">
+                🍰 Desserts
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RECIPES -->
+    <section class="recipes-section" id="recipes">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">START COOKING</p>
+                <h2>Popular Recipes</h2>
+            </div>
+
+            <p>
+                Easy recipes designed to help you learn
+                essential cooking skills.
+            </p>
+
+        </div>
+
+
+        <div class="recipe-grid" id="recipeGrid">
+
+
+            <!-- RECIPE 1 -->
+            <article class="recipe-card"
+                     data-category="dinner"
+                     data-name="spaghetti">
+
+                <div class="recipe-image pasta">
+                    🍝
+                </div>
+
+                <div class="recipe-content">
+
+                    <span class="difficulty easy">
+                        EASY
+                    </span>
+
+                    <h3>Classic Spaghetti</h3>
+
+                    <p>
+                        A simple pasta dish perfect for beginners.
+                    </p>
+
+                    <div class="recipe-info">
+                        <span>⏱ 25 min</span>
+                        <span>⭐ Beginner</span>
+                    </div>
+
+                    <button
+                        class="recipe-button"
+                        data-recipe="spaghetti">
+                        View Recipe →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- RECIPE 2 -->
+            <article class="recipe-card"
+                     data-category="breakfast"
+                     data-name="pancakes">
+
+                <div class="recipe-image pancakes">
+                    🥞
+                </div>
+
+                <div class="recipe-content">
+
+                    <span class="difficulty easy">
+                        EASY
+                    </span>
+
+                    <h3>Fluffy Pancakes</h3>
+
+                    <p>
+                        Light and fluffy pancakes for a perfect breakfast.
+                    </p>
+
+                    <div class="recipe-info">
+                        <span>⏱ 20 min</span>
+                        <span>⭐ Beginner</span>
+                    </div>
+
+                    <button
+                        class="recipe-button"
+                        data-recipe="pancakes">
+                        View Recipe →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- RECIPE 3 -->
+            <article class="recipe-card"
+                     data-category="lunch"
+                     data-name="chicken salad">
+
+                <div class="recipe-image salad">
+                    🥗
+                </div>
+
+                <div class="recipe-content">
+
+                    <span class="difficulty easy">
+                        EASY
+                    </span>
+
+                    <h3>Fresh Chicken Salad</h3>
+
+                    <p>
+                        A healthy and colorful meal for lunch.
+                    </p>
+
+                    <div class="recipe-info">
+                        <span>⏱ 20 min</span>
+                        <span>⭐ Beginner</span>
+                    </div>
+
+                    <button
+                        class="recipe-button"
+                        data-recipe="salad">
+                        View Recipe →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- RECIPE 4 -->
+            <article class="recipe-card"
+                     data-category="dessert"
+                     data-name="chocolate cake">
+
+                <div class="recipe-image cake">
+                    🍰
+                </div>
+
+                <div class="recipe-content">
+
+                    <span class="difficulty medium">
+                        INTERMEDIATE
+                    </span>
+
+                    <h3>Chocolate Cake</h3>
+
+                    <p>
+                        A rich chocolate cake that teaches basic baking skills.
+                    </p>
+
+                    <div class="recipe-info">
+                        <span>⏱ 60 min</span>
+                        <span>⭐ Intermediate</span>
+                    </div>
+
+                    <button
+                        class="recipe-button"
+                        data-recipe="cake">
+                        View Recipe →
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div id="noResults" class="no-results">
+            <h3>No recipes found</h3>
+            <p>Try another search or category.</p>
+        </div>
+
+    </section>
+
+
+    <!-- LESSONS -->
+    <section class="lessons-section" id="lessons">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">BUILD YOUR SKILLS</p>
+                <h2>Cooking Lessons</h2>
+            </div>
+
+            <p>
+                Master the techniques that every good cook should know.
+            </p>
+
+        </div>
+
+
+        <div class="lesson-grid">
+
+            <div class="lesson-card">
+
+                <div class="lesson-number">
+                    01
+                </div>
+
+                <div class="lesson-icon">
+                    🔪
+                </div>
+
+                <h3>Knife Skills</h3>
+
+                <p>
+                    Learn how to safely hold a knife,
+                    chop vegetables, and improve your cutting technique.
+                </p>
+
+                <a href="#lesson1">
+                    Learn More →
+                </a>
+
+            </div>
+
+
+            <div class="lesson-card">
+
+                <div class="lesson-number">
+                    02
+                </div>
+
+                <div class="lesson-icon">
+                    🔥
+                </div>
+
+                <h3>Understanding Heat</h3>
+
+                <p>
+                    Learn when to use low, medium, and high heat
+                    for different cooking techniques.
+                </p>
+
+                <a href="#lesson2">
+                    Learn More →
+                </a>
+
+            </div>
+
+
+            <div class="lesson-card">
+
+                <div class="lesson-number">
+                    03
+                </div>
+
+                <div class="lesson-icon">
+                    🧂
+                </div>
+
+                <h3>Seasoning Food</h3>
+
+                <p>
+                    Understand salt, pepper, herbs, spices,
+                    and how to build delicious flavors.
+                </p>
+
+                <a href="#lesson3">
+                    Learn More →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+
+        <div>
+
+            <p class="eyebrow">YOUR COOKING JOURNEY</p>
+
+            <h2>
+                You don't need to be a chef<br>
+                to cook great food.
+            </h2>
+
+            <p>
+                Start with one recipe. Learn one technique.
+                Then keep cooking.
+            </p>
+
+            <a href="#recipes" class="button primary-button">
+                Start Cooking
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+
+        <div class="about-content">
+
+            <p class="eyebrow">ABOUT COOKWISE</p>
+
+            <h2>
+                Cooking should be<br>
+                <span>simple and enjoyable.</span>
+            </h2>
+
+            <p>
+                CookWise was created to make learning how to cook
+                easier for everyone. Our lessons focus on practical
+                skills that you can use in your own kitchen.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            🍳 CookWise
+        </div>
+
+        <p>
+            Learn. Cook. Enjoy.
+        </p>
+
+        <p class="copyright">
+            © 2026 CookWise. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- RECIPE MODAL -->
+    <div class="modal" id="recipeModal">
+
+        <div class="modal-content">
+
+            <button class="close-modal" id="closeModal">
+                ×
+            </button>
+
+            <div id="modalRecipe"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
