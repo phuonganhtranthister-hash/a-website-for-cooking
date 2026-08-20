@@ -1,1 +1,715 @@
+/* =========================================
+   COOKWISE - MAIN STYLES
+========================================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf5;
+    color: #29251f;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #fffaf5;
+
+    border-bottom: 1px solid #eee4d9;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #d85c28;
+}
+
+.logo span {
+    color: #29251f;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 35px;
+}
+
+.navbar nav a {
+    font-weight: 600;
+    color: #5c554d;
+    transition: 0.2s;
+}
+
+.navbar nav a:hover {
+    color: #d85c28;
+}
+
+.mobile-menu {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    background: #f6e8d7;
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 86%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.eyebrow {
+    color: #d85c28;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 76px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #d85c28;
+}
+
+.hero-description {
+    color: #625a51;
+    font-size: 19px;
+    max-width: 580px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.primary-button {
+    background: #d85c28;
+    color: white;
+}
+
+.primary-button:hover {
+    background: #b94c20;
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    border: 2px solid #d85c28;
+    color: #d85c28;
+}
+
+.secondary-button:hover {
+    background: #d85c28;
+    color: white;
+}
+
+.hero-food {
+    width: 330px;
+    height: 330px;
+
+    border-radius: 50%;
+
+    background: #fffaf5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 170px;
+
+    box-shadow: 0 20px 50px rgba(70, 45, 20, 0.12);
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-section {
+    padding: 55px 20px 35px;
+    background: white;
+}
+
+.search-container {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.search-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+
+    background: #fffaf5;
+
+    border: 2px solid #eadfd3;
+
+    border-radius: 10px;
+
+    padding: 0 18px;
+
+    transition: 0.2s;
+}
+
+.search-box:focus-within {
+    border-color: #d85c28;
+}
+
+.search-box span {
+    font-size: 20px;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    padding: 17px;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   CATEGORIES
+========================================= */
+
+.categories {
+    padding: 35px 7%;
+    background: white;
+    text-align: center;
+}
+
+.categories h2 {
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.category {
+    border: 1px solid #ddd0c3;
+    background: white;
+    padding: 10px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #625a51;
+}
+
+.category:hover,
+.category.active {
+    background: #d85c28;
+    color: white;
+    border-color: #d85c28;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.recipes-section,
+.lessons-section {
+    padding: 90px 7%;
+}
+
+.section-heading {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+}
+
+.section-heading > p {
+    max-width: 400px;
+    color: #70675e;
+}
+
+
+/* =========================================
+   RECIPE CARDS
+========================================= */
+
+.recipe-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+.recipe-card {
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(70, 45, 20, 0.08);
+
+    transition: 0.25s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(70, 45, 20, 0.13);
+}
+
+.recipe-image {
+    height: 210px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 100px;
+}
+
+.pasta {
+    background: #f8dfc7;
+}
+
+.pancakes {
+    background: #f7e6b9;
+}
+
+.salad {
+    background: #dcebd4;
+}
+
+.cake {
+    background: #ead5cc;
+}
+
+.recipe-content {
+    padding: 24px;
+}
+
+.difficulty {
+    display: inline-block;
+
+    padding: 5px 9px;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.easy {
+    background: #e5f3df;
+    color: #4e7b43;
+}
+
+.medium {
+    background: #fff0d2;
+    color: #99651d;
+}
+
+.recipe-content h3 {
+    font-size: 23px;
+    margin: 12px 0 8px;
+}
+
+.recipe-content p {
+    color: #70675e;
+    margin-bottom: 20px;
+}
+
+.recipe-info {
+    display: flex;
+    justify-content: space-between;
+
+    color: #81786e;
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+.recipe-button {
+    border: none;
+    background: none;
+    color: #d85c28;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 0;
+}
+
+.recipe-button:hover {
+    text-decoration: underline;
+}
+
+.no-results {
+    display: none;
+    text-align: center;
+    padding: 50px;
+}
+
+
+/* =========================================
+   LESSONS
+========================================= */
+
+.lessons-section {
+    background: #f6e8d7;
+}
+
+.lesson-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+.lesson-card {
+    background: white;
+    padding: 35px;
+
+    border-radius: 15px;
+
+    position: relative;
+
+    box-shadow: 0 8px 25px rgba(70, 45, 20, 0.07);
+}
+
+.lesson-number {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+
+    color: #d9cfc4;
+
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.lesson-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.lesson-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.lesson-card p {
+    color: #70675e;
+    margin-bottom: 20px;
+}
+
+.lesson-card a {
+    color: #d85c28;
+    font-weight: 800;
+}
+
+
+/* =========================================
+   CALL TO ACTION
+========================================= */
+
+.cta {
+    background: #29251f;
+    color: white;
+
+    padding: 100px 7%;
+
+    text-align: center;
+}
+
+.cta .eyebrow {
+    color: #f1a06e;
+}
+
+.cta h2 {
+    font-size: clamp(35px, 5vw, 55px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    color: #d4ccc4;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about-section {
+    padding: 100px 7%;
+    background: white;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 45px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.about-content h2 span {
+    color: #d85c28;
+}
+
+.about-content p:last-child {
+    color: #70675e;
+    font-size: 18px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #f6e8d7;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #70675e;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RECIPE MODAL
+========================================= */
+
+.modal {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    z-index: 200;
+
+    padding: 20px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+
+    width: 100%;
+    max-width: 650px;
+
+    max-height: 90vh;
+    overflow-y: auto;
+
+    border-radius: 15px;
+
+    padding: 40px;
+
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+
+    border: none;
+    background: none;
+
+    font-size: 32px;
+
+    cursor: pointer;
+
+    color: #777;
+}
+
+.modal-content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.modal-content h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.modal-content ul,
+.modal-content ol {
+    padding-left: 25px;
+}
+
+.modal-content li {
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 0;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-food {
+        width: 220px;
+        height: 220px;
+        font-size: 110px;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .recipes-section,
+    .lessons-section {
+        padding: 65px 5%;
+    }
+
+    .about-content h2 {
+        font-size: 35px;
+    }
+
+    .modal-content {
+        padding: 30px 25px;
+    }
+}
